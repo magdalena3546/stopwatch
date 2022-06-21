@@ -7,7 +7,7 @@ const App = () => {
   const [time, setTime] = useState(0);
   const [timer, setTimer] = useState(null);
 
-  const start = (e) => {
+  const start = e => {
     e.preventDefault();
     setTimer(setInterval(() => {
       setTime(prevValue => prevValue + 1);
